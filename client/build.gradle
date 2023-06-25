@@ -19,7 +19,6 @@ sourceSets {
 
 
 dependencies {
-    implementation project(':')
     swaggerCodegen 'io.swagger.codegen.v3:swagger-codegen-cli:3.0.45'
 
     implementation 'io.swagger.core.v3:swagger-annotations:2.0.0'

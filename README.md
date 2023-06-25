@@ -11,5 +11,5 @@ O módulo `client` contém as definições do OpenAPI para geração dos stubs.
 - Swagger Code Gen
 
 ## Run
-- Use `docker build . -t estopenapi-gen` to build the image;
-- Use `docker run -p 8080:8080 estopenapi-gen` to run the image;
+- Use `docker build . -t estopenapi-gen` para construir a imagem;
+- Use `docker run -p 8080:8080 estopenapi-gen` para subir o container;

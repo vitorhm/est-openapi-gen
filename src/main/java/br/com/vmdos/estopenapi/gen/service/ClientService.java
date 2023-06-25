@@ -4,16 +4,17 @@ import br.com.example.generated.estopenapi.ApiException;
 import br.com.example.generated.estopenapi.api.GerenciamentoDeClientesApi;
 import br.com.example.generated.estopenapi.model.ClientRequest;
 import br.com.example.generated.estopenapi.model.ClientResponse;
-import br.com.vmdos.adapter.ClientRequestAdapter;
-import br.com.vmdos.adapter.ClientResponseAdapter;
+import br.com.vmdos.estopenapi.gen.adapter.ClientRequestAdapter;
+import br.com.vmdos.estopenapi.gen.adapter.ClientResponseAdapter;
 import br.com.vmdos.estopenapi.gen.dto.ClientRequestDto;
 import br.com.vmdos.estopenapi.gen.dto.ClientResponseDto;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ClientService {
 
-    @Autowired
-    private GerenciamentoDeClientesApi gerenciamentoDeClientesApi;
+    private GerenciamentoDeClientesApi gerenciamentoDeClientesApi = new GerenciamentoDeClientesApi();
 
     @Autowired
     private ClientRequestAdapter clientRequestAdapter;
