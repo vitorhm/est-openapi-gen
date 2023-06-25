@@ -1,0 +1,7 @@
+{
+  "modelPackage": "br.com.example.generated.estopenapi.model",
+  "apiPackage": "br.com.example.generated.estopenapi.api",
+  "invokerPackage": "br.com.example.generated.estopenapi",
+  "generateSupportingFiles": false,
+  "interfaceOnly": true
+}
